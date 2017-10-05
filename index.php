@@ -61,7 +61,7 @@ include_once './cauhinh/ketnoi.php';
                 <div id="logo" class="col-md-4 col-sm-12 col-xs-12">
                     <h1>
                         <a href="index.php">
-                                <img src="images/logo.png">
+                                <img src="images/mobileshop.png">
                             </a>
                     </h1>
                 </div>

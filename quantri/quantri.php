@@ -10,7 +10,7 @@ if (!isset($_SESSION['email']) && !isset($_COOKIE['email'])) {
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Vietpro Mobile Shop</title>
+        <title>Mobile Shop</title>
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/datepicker3.css" rel="stylesheet">
@@ -36,7 +36,7 @@ if (!isset($_SESSION['email']) && !isset($_COOKIE['email'])) {
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><span>VIETPROSHOP</span>Admin</a>
+                    <a class="navbar-brand" href="#"><span>MOBILESHOP</span>Admin</a>
                     <ul class="user-menu">
                         <li class="dropdown pull-right">
 
@@ -61,8 +61,8 @@ if (!isset($_SESSION['email']) && !isset($_COOKIE['email'])) {
                 </div>
             </form>
             <ul class="nav menu">
-                <li class="active"><a href="./quantri.php"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Trang chủ quản trị</a></li>
-                <li class="parent ">
+                <li <?php if(!isset($_GET['page_layout'])) echo 'class="active"'; ?>><a href="./quantri.php"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Trang chủ quản trị</a></li>
+                <li class="parent">
                     <a href="#">
                         <span data-toggle="collapse" href="#sub-item-1"><svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg></span> Quản lý thành viên
                     </a>
@@ -75,7 +75,7 @@ if (!isset($_SESSION['email']) && !isset($_COOKIE['email'])) {
                         </li>
                     </ul>			
                 </li>
-                <li class="parent ">
+                <li class="parent <?php if($_GET['page_layout']=='danhsachdm'||$_GET['page_layout']=='themdm') echo 'active'; ?>">
                     <a href="./quantri.php?page_layout=danhsachdm">
                         <span data-toggle="collapse" href="#sub-item-2"><svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg></span> Quản lý danh mục
                     </a>
@@ -88,7 +88,7 @@ if (!isset($_SESSION['email']) && !isset($_COOKIE['email'])) {
 
                     </ul>			
                 </li>
-                <li class="parent ">
+                <li class="parent <?php if($_GET['page_layout']=='danhsachsp'||$_GET['page_layout']=='themsp') echo 'active'; ?>">
                     <a href="./quantri.php?page_layout=danhsachsp">
                         <span data-toggle="collapse" href="#sub-item-3"><svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg></span> Quản lý sản phẩm
                     </a>
