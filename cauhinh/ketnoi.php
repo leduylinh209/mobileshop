@@ -2,7 +2,7 @@
 $dbHost = "localhost";
 $dbUser = "root";
 $dbPass = "";
-$dbName = "vietproshop";
+$dbName = "mobileshop";
 
 $conn = mysqli_connect($dbHost, $dbUser, $dbPass, $dbName);
 if($conn){
