@@ -131,10 +131,9 @@ include_once './cauhinh/ketnoi.php';
     <div id="footer">
         <div class="row">
             <div id="footer-main" class="col-md-12 col-sm-12 col-xs-12">
-                <h4>Học viện Công nghệ Vietpro - Vietpro Academy</h4>
-                <p><b>Trụ sở chính:</b> Số B8A Ngõ 18 Võ Văn Dũng, Hoàng Cầu, Đống Đa, Hà Nội | <b>Hotline</b> 0988 550 553</p>
-                <p><b>Cơ sở 2:</b> Số 25 Ngõ 178/71 Tây Sơn, Đống Đa, Hà Nội | <b>Hotlin</b>e 0988 550 552</p>
-                <p>Bản quyền thuộc Vietpro Academy</p>
+                <h4>Đại học Bách Khoa Hà Nội - HUST</h4>
+                <p><b>Nhóm XX</b></p>
+                <p> Lê Trọng Duy Linh<b></b> 20142566</p>
             </div>
         </div>
     </div>
