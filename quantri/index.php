@@ -6,7 +6,7 @@ if (isset($_SESSION['email']) || isset($_COOKIE['email'])) {
     header('location:quantri.php');
 }
 if (isset($_POST['submit'])) {
-    $sql = "SELECT * FROM thanhvien WHERE email='" . $_POST['email'] . "'";
+    $sql = "SELECT * FROM thanhvien WHERE email='" . $_POST['email'] . "' AND mat_khau='".$_POST['mk']."'";
     $que = mysqli_query($conn, $sql);
     if (mysqli_num_rows($que)) {
         $res = mysqli_fetch_array($que);
@@ -26,7 +26,7 @@ if (isset($_POST['submit'])) {
         }
     }
     else {
-        echo "<center class='alert alert-danger'>Tai khoan cua ban khong ton tai</center>";
+        echo "<center class='alert alert-danger'>Sai tên email hoặc mật khẩu</center>";
     }
 }
 ?>

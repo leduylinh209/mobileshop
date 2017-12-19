@@ -6,7 +6,7 @@ include_once './cauhinh/ketnoi.php';
 <html>
 
 <head>
-    <title>Vietpro Shop</title>
+    <title>Mobile Shop</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <script src="js/jquery-3.1.1.min.js"></script>
