@@ -62,19 +62,6 @@ if (!isset($_SESSION['email']) && !isset($_COOKIE['email'])) {
             </form>
             <ul class="nav menu">
                 <li <?php if(!isset($_GET['page_layout'])) echo 'class="active"'; ?>><a href="./quantri.php"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Trang chủ quản trị</a></li>
-                <li class="parent">
-                    <a href="#">
-                        <span data-toggle="collapse" href="#sub-item-1"><svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg></span> Quản lý thành viên
-                    </a>
-                    <ul class="children collapse" id="sub-item-1">
-                        <li>
-                            <a href="#">
-                                <svg class="glyph stroked plus sign"><use xlink:href="#stroked-plus-sign"/></svg>
-                                Thêm mới
-                            </a>
-                        </li>
-                    </ul>			
-                </li>
                 <li class="parent <?php if($_GET['page_layout']=='danhsachdm'||$_GET['page_layout']=='themdm') echo 'active'; ?>">
                     <a href="./quantri.php?page_layout=danhsachdm">
                         <span data-toggle="collapse" href="#sub-item-2"><svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg></span> Quản lý danh mục
@@ -101,27 +88,7 @@ if (!isset($_SESSION['email']) && !isset($_COOKIE['email'])) {
 
                     </ul>				
                 </li>
-                <li class="parent ">
-                    <a href="#">
-                        <span data-toggle="collapse" href="#sub-item-4"><svg class="glyph stroked two messages"><use xlink:href="#stroked-two-messages"/></svg></span> Quản lý bình luận
-                    </a>
 
-                </li>
-                <li class="parent ">
-                    <a href="#">
-                        <span data-toggle="collapse" href="#sub-item-5"><svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg></span> Quản lý quảng cáo
-                    </a>
-                    <ul class="children collapse" id="sub-item-5">
-                        <li>
-                            <a class="" href="#">
-                                <svg class="glyph stroked plus sign"><use xlink:href="#stroked-plus-sign"/></svg> Thêm mới
-                            </a>
-                        </li>
-
-                    </ul>			
-                </li>
-
-                <li><a href="#"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"/></svg> Cấu hình</a></li>
 
                 <li role="presentation" class="divider"></li>
                 <li><a href="./dangxuat.php"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Đăng xuất</a></li>
